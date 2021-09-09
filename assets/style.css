@@ -1,10 +1,17 @@
 * {
  background-color: rgb(51, 50, 50);  
  font-family:Arial, Helvetica, sans-serif;  
+ box-sizing: border-box;
  }
 
-header {
+body {
     text-align: center;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
 }
 
 header h1 {
@@ -14,4 +21,48 @@ header h1 {
 
 header p {
     color: white;
+    margin: 0px 50px 0px 50px;
 }
+
+.CSS-snippet {
+    border-style:dashed;
+    border-width: 2px;
+    border-color: white;
+    margin: 50px 30px 30px 0px;
+}
+
+.CSS-snippet header {
+    color: violet;
+    text-align: left;
+    font-weight: 700;
+    font-size: 25px;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: white;
+    padding: 10px;
+    margin: -25px 15px 0 15px;
+
+}
+
+.description {
+    color: violet;
+    text-align: left;
+    margin: 0px 15px 0px 15px;
+}
+
+.CSS {
+    color: white;
+    text-align: left;
+    font-family: monospace;
+    font-size: inherit;
+}
+
+.CSS ul {
+    list-style: none;
+}
+
+.CSS li {
+
+}
+
