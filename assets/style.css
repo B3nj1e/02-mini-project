@@ -57,7 +57,7 @@ header p {
 .description {
     color: violet;
     margin: 15px
-/* question for tutors: why is my text that overflows onto a 2nd line indenting? */
+/* question for tutors: why is my text that starts a 2nd line indenting? */
 }
 
 /* pre is used when trying to display coding */
