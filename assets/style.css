@@ -5,8 +5,26 @@
  }
 
 body {
-    text-align: center;
+    
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+header h1 {
+    font-weight: 700;
+    color:rgb(223, 72, 223);
+    text-align: center;
+}
+
+header p {
+    color: white;
+    margin: 0px 50px 0px 50px;
+    text-align: center;
+}
+
+.CSS-snippet-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -14,21 +32,12 @@ body {
     align-items: flex-start;
 }
 
-header h1 {
-    font-weight: 700;
-    color:rgb(223, 72, 223)
-}
-
-header p {
-    color: white;
-    margin: 0px 50px 0px 50px;
-}
-
 .CSS-snippet {
     border-style:dashed;
     border-width: 2px;
     border-color: white;
-    margin: 50px 30px 30px 0px;
+    margin: 50px 15px 30px 15px;
+    flex: 0 0 300px;
 }
 
 .CSS-snippet header {
@@ -51,18 +60,19 @@ header p {
     margin: 0px 15px 0px 15px;
 }
 
-.CSS {
+pre {
     color: white;
     text-align: left;
     font-family: monospace;
-    font-size: inherit;
+    background: linear-gradient(rgb(150, 0, 150), magenta);
+    margin: 10px 15px 0px 15px;
+    padding: 15px;
+    border-radius: 10px;
+    user-select: none;
+    user-select: auto;
+    user-select: text;
+    user-select: contain;
+    user-select: all;
 }
 
-.CSS ul {
-    list-style: none;
-}
-
-.CSS li {
-
-}
 
