@@ -36,8 +36,9 @@ header p {
     border-style:dashed;
     border-width: 2px;
     border-color: white;
-    margin: 50px 15px 30px 15px;
+    margin: 50px 15px 0px 15px;
     flex: 0 0 300px;
+    /* need to define flex width to size the snippet cards, otherwise each a different size due to text amount */
 }
 
 .CSS-snippet header {
@@ -51,15 +52,15 @@ header p {
     border-color: white;
     padding: 10px;
     margin: -25px 15px 0 15px;
-
 }
 
 .description {
     color: violet;
-    text-align: left;
-    margin: 0px 15px 0px 15px;
+    margin: 15px
+/* question for tutors: why is my text that overflows onto a 2nd line indenting? */
 }
 
+/* pre is used when trying to display coding */
 pre {
     color: white;
     text-align: left;
@@ -68,11 +69,26 @@ pre {
     margin: 10px 15px 0px 15px;
     padding: 15px;
     border-radius: 10px;
+    /* border radius rounds the margin corners */
+    /* width prevents the text from stretching the boxes to very wide when there is a longer line of code */
+    white-space: pre-wrap; 
+    /* white space pre wrap keeps the code text within the colored background */
     user-select: none;
     user-select: auto;
     user-select: text;
     user-select: contain;
     user-select: all;
+    /* user select, selects all of the writing within the pre tags in the HTML */
 }
 
+@media screen and (max-width 992px) {
+    .CSS-snippet {
+        width: 50%;
+    }
+}
 
+@media screen and (max-width 786px) {
+    .CSS-snippet {
+        width: 100%;
+    }
+}

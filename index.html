@@ -32,60 +32,65 @@
 
                 <section class="CSS-snippet">
                     <header>Flexbox Column</header>
-                    <p><span class="description">Use these three properties to create a Flexbox row layout.</span></p>
+                    <p><span class="description">Use this to create a Flexbox column layout.</span></p>
                     <p><span class="CSS">
-<pre>.row { 
+<pre>.column { 
     display: flex; 
-    flex-direction: row; 
-    flex-wrap: wrap; 
+    flex-direction: column;  
 }</pre>
                         </span></p>
                 </section>
 
                 <section class="CSS-snippet">
                     <header>CSS Grid Layout</header>
-                    <p><span class="description">Use these three properties to create a Flexbox row layout.</span></p>
+                    <p><span class="description">Build a 12-column layout using CSS grid.</span></p>
                     <p><span class="CSS">
-<pre>.row { 
-    display: flex; 
-    flex-direction: row; 
-    flex-wrap: wrap; 
+<pre>.grid { 
+    display: grid; 
+    width: 100%; 
+    grid-template-columns: repeat(12, 1fr); 
 }</pre>
                         </span></p>
                 </section>
 
                 <section class="CSS-snippet">
                     <header>Linear Gradients</header>
-                    <p><span class="description">Use these three properties to create a Flexbox row layout.</span></p>
+                    <p><span class="description">This will create a background linear gradient from top to bottom.</span></p>
                     <p><span class="CSS">
-<pre>.row { 
-    display: flex; 
-    flex-direction: row; 
-    flex-wrap: wrap; 
+<pre>.linear-gradient-background { 
+    bakground-image: linear-gradient( blue, red); 
+}
+OR
+.child elemnt {
+    background: linear-gradient (blue, red)
+}
+</pre>
+                        </span></p>
+                </section>
+
+                <section class="CSS-snippet">
+                    <header>Box Transition Glow</header>
+                    <p><span class="description">Use transition and box shadows to glow on hovwer</span></p>
+                    <p><span class="CSS">
+<pre>.code-card .card-header { 
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.code-card:hover,
+.code-card:hover .card-header {
+    box-shadow: inset 0px 0px 8px blue, 0 0 15px red;
 }</pre>
                         </span></p>
                 </section>
 
                 <section class="CSS-snippet">
                     <header>Overlay Card with Title</header>
-                    <p><span class="description">Use these three properties to create a Flexbox row layout.</span></p>
+                    <p><span class="description">Use position properties and negative margins to raise elements higher than their natural starting point.</span></p>
                     <p><span class="CSS">
-<pre>.row { 
-    display: flex; 
-    flex-direction: row; 
-    flex-wrap: wrap; 
-}</pre>
-                        </span></p>
-                </section>
-
-                <section class="CSS-snippet">
-                    <header>Box Transition Glow</header>
-                    <p><span class="description">Use these three properties to create a Flexbox row layout.</span></p>
-                    <p><span class="CSS">
-<pre>.row { 
-    display: flex; 
-    flex-direction: row; 
-    flex-wrap: wrap; 
+<pre>.card-header { 
+    position: relative;
+    margin-top: -20px; 
 }</pre>
                         </span></p>
                 </section>
